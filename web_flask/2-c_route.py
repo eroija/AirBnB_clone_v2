@@ -23,8 +23,7 @@ def c_text(text):
     Route for '/c/<text>' that returns "C" followed by the value of the
     text variable.
     """
-    display_text = text.replace('_', ' ')
-    return 'C ' + display_text
+    return "C {}".format(text.replace('_', ' '))
 
 
 if __name__ == '__main__':
