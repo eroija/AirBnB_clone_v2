@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """This module starts a Flask web application."""
-from flask import FLASK
+from flask import Flask
 
 
-app = FLASK(__name__)
+app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
